@@ -8,7 +8,7 @@ public class ExpressionTreeTest {
         boolean done = false;
 
         while (!done) {
-            ImageIcon icon = new ImageIcon("Resources/MathIcon.png");
+            ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("MathIcon.png"));
             Image image = icon.getImage();
             Image newImg = image.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
             icon = new ImageIcon(newImg);
